@@ -47,7 +47,6 @@ pipeline{
 				build job: 'Dev-Ops-Freestyle-Practice'
 			}
 		}
-    }
     post{
         success{
             bat "echo success"
