@@ -28,7 +28,7 @@ pipeline{
                 {
 		    bat "echo Sonar Run half"
                         bat "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.8.0.2131:sonar"        
-                }
+		}
             }
         }
        
