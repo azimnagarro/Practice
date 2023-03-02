@@ -31,14 +31,7 @@ pipeline{
                 }
             }
         }
-        stage("Publish to Artifactory"){
-            steps{
-                rtMavenDeployer(
-                    id: 'deployer',
-                    serverId: 'Ravish_Artifactory',
-                    releaseRepo: 'Ravish_Artifactory',
-                    snapshotRepo: 'Ravish_Artifactory'
-                )
+       
                 rtMavenRun(
                     pom: 'pom.xml',
                     goals: 'clean install',
