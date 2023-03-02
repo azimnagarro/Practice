@@ -52,4 +52,3 @@ pipeline{
             bat "echo success"
             }
         }
-}
